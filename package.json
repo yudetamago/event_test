@@ -1,0 +1,42 @@
+{
+  "name": "hardhat_example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yudetamago/hardhat_example.git",
+  "author": "yudetamago <yudetamago.orz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "lint:sol": "solhint 'contracts/**/*.sol'",
+    "lint:js": "eslint --max-warnings=0 --ext .ts,.js .",
+    "lint": "yarn lint:sol && yarn lint:js",
+    "format:js": "prettier --write '**/*.{js,ts}'",
+    "format": "yarn format:js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^7.0.1",
+    "@typechain/hardhat": "^2.3.0",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.7.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.4.5",
+    "hardhat": "^2.6.1",
+    "prettier": "^2.3.2",
+    "solhint": "^3.3.6",
+    "ts-node": "^10.2.1",
+    "typechain": "^5.1.2",
+    "typescript": "^4.4.2"
+  }
+}
